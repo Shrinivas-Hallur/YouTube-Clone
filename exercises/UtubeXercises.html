@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            UtubeXercise
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            .xercise{
+               width: 200px;
+               /*border-width: 2px;
+               border-color: brown;
+               border-style: solid;
+               border-radius: 25px;*/
+               border: none;
+            }
+            .xercise2{
+                width: 200px;
+                height: 200px;
+                /*border-width: 2px;
+                border-color: brown;
+                border-style: solid;
+                border-radius: 0px*/
+                /*border: none;*/
+                /*vertical-align: top;*/
+                margin-left: 15px;
+                object-fit: cover;
+                object-position: center;
+            }
+            .xercise3{
+                width:200px;
+                height:200px;
+                border-radius: 100px;
+                object-fit: cover;
+                object-position: center;
+                margin-left: 15px;
+            }
+            .search-baar{
+                border-radius: 3px;
+                border-width: 2px;
+                border-style: solid;
+            }
+            .google-bar{
+                font-size: 16px;
+                width: 500px;
+                border: none;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-radius: 30px;
+                box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+            .email-search{
+                width: 300px;
+                border-width: 2px;
+                border-style: solid;
+                border-color: black;
+                margin-bottom: 3px;
+            }
+            .p{
+                font-size: 12px;
+            }
+            .agree-button{
+                background-color: rgb(21, 33, 198);
+                color: white;
+                margin-left: 50px;
+                font-size: 20px;
+                border-radius: 30px;
+                width: 200px;
+                border: none;
+                display: block;
+                margin-bottom: 10px;
+            }
+            .sevenG{
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 25px;
+                margin-right: 5px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .baar{
+                display: inline-block;
+                vertical-align: middle;
+                border:none;
+                margin-right: 5px;
+                width:200px
+            }
+            .tweet-button{
+                background-color: rgb(51, 150, 236);
+                color: white;
+                font-weight: bold;
+                border:none;
+                border-radius: 30px;
+                font-size: 18px;
+                vertical-align: middle;
+            }
+            .name-box,.email-box{
+                display: block;
+                margin-bottom: 2px;
+            }
+
+            .thanks{
+                width: 200px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .yes,.no{
+                vertical-align: middle;
+            }
+            .google-img{
+                display: block;
+                margin: auto;
+                width: 400px; 
+            }
+            .google-bar2{
+                font-size: 16px;
+                width: 500px;
+                border: none;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-radius: 30px;
+                box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+                margin-top: 2px;
+                margin-left: 20px;
+                display: block;
+                margin: auto;
+                margin-bottom: 10px;
+            }
+            .first-name1{
+                display: inline-block;
+                width: 100px;
+                margin-bottom: 2px;
+                border-radius: 3px;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            .first-name2{
+                width: 100px;
+                margin-bottom: 2px;
+                border-radius: 3px;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            .email-box2{
+                display: block;
+                margin-bottom: 2px;
+                border-radius: 3px;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                width:218px;
+            }
+            .sign-up{
+                width: 230px;
+                background-color: rgb(58, 105, 191);
+                color: white;
+                font-weight: bold;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border: none;
+                border-radius: 30px;;
+            }
+            .uber{
+                font-size: 25px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            .uber-pick{
+                width: 218px;
+                background-color:rgb(230, 230, 230);
+                color: black;
+                border: none;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-bottom: 2px;
+                display: block;
+            }
+            .uber-drop{
+                width: 218px;
+                background-color:rgb(230, 230, 230);
+                color: black;
+                border: none;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-bottom: 10px;
+                display: block;
+            }
+            .request{
+                background-color: black;
+                color: white;
+                border: none;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-bottom: 10px;
+                margin-right:10px ;
+                vertical-align: top;
+            }
+            .later{
+                background-color:rgb(232, 230, 230);
+                color: black;
+                border: none;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-bottom: 10px;
+                margin-right:10px ;
+                width: 126.5px;
+                vertical-align: top;
+            }
+            .a9{
+                width: 30px;
+                height: 30px;
+                background-color: red;
+                display: inline-block;
+            }
+            .b9{
+                width: 30px;
+                height: 30px;
+                background-color: green;
+                display: inline-block;
+                border-radius: 15px;
+            }
+            .c9{
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(150, 150, 150);
+                width: 300px;
+                padding-left: 15px;
+                padding-bottom: 20px;
+                display: inline-block;
+                margin-right: 5px;
+            }
+            .d9{
+                background-color: black;
+                color: white;
+                width: 330px;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 10px;
+                padding-bottom: 15px;
+                display: inline-block;
+                margin-right: 15px;
+            }
+            .d91{
+                font-weight: bold;
+                font-size: 25px;
+            }
+            .e9{
+                margin-top: 5px;
+                border-radius: 5px;
+                box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+                display: inline-block;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            .f9{
+                width: 200px;
+                border-radius: 5px;
+                box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+                display: inline-block;
+                margin-top: 10px;
+                margin-right: 5px;
+            }
+            .f92{
+                width: 200px;
+                height: 200px;
+                /*border-width: 2px;
+                border-color: brown;
+                border-style: solid;
+                border-radius: 0px*/
+                /*border: none;*/
+                /*vertical-align: top;*/
+                object-fit: cover;
+                object-position: top;
+            }
+            .ADD{
+                background-color: rgb(0, 157, 255);
+                color: white;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-radius: 3px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+                margin-top: 0px;
+                border: none;
+
+            }
+            .Oliver{
+                font-weight: bold;
+                margin-left: 5px;
+                margin-top: 0px;
+            }
+            .Mutual{
+                margin-left: 5px;
+                color: grey;
+                margin-top: 0px;
+            }
+            .g9{
+                width: 625px;
+                border-radius: 5px;
+                box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+                display: inline-block;
+                margin-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                vertical-align: top;
+            }
+            .h9{
+                text-align: center;
+            }
+
+            .google-image{
+                width: 200px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .google-bar2{
+            border: none;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 16px;
+            padding-right: 16px;
+            font-size: 16px;
+            width: 500px;
+            border-radius: 30px;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            }
+
+            .google-button{
+            background-color: rgb(245, 245, 245);
+            border: none;
+            font-size: 15px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            }
+
+            .search-button {
+            margin-right: 10px;
+            background-color: rgb(245, 245, 245);
+            border: none;
+            font-size: 15px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 20px;
+            padding-right: 20px;
+            }
+            .A10,.B10{
+                border-radius: 5px;
+                border-color: rgb(96,96,96);
+                border-width: 1px;
+                border-style: solid;
+                display: inline-block;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            .a10{
+                display: inline-block;
+                margin-right: 3px;
+                vertical-align: middle;
+            }
+            .sevenGb{
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 25px;
+                display: inline-block;
+    
+            }
+            .cat-info{
+                display: inline-block;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding-right: 80px;
+                vertical-align: middle;
+            }
+            .cat-name{
+            }
+            .name-cat{
+                font-weight: 500;
+                font-family: Roboto;
+                font-size: 14px;
+                margin-top: 0px;
+                margin-bottom: 2px;
+            }
+            .the-cat{
+                font-family: Roboto;
+                font-size: 16px;
+                color: rgb(96,96,96);
+                margin-top: 2px;
+                margin-bottom: 2px;
+            }
+            .pop{
+                font-family: Roboto;
+                font-size: 14px;
+                color: rgb(96,96,96);
+                margin-top: 2px;
+                margin-bottom: 2px;
+            }
+            .fellow{
+                display:inline-block;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                vertical-align: middle;
+            }
+            .follow{
+                background-color: rgb(0, 157, 255);
+                color: white;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-radius: 3px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+                margin-top: 0px;
+                border: none;
+            }
+            .bb10{
+                display: block;
+            }
+            .c101{
+                border-radius: 5px;
+                border-color: rgb(96,96,96);
+                border-width: 1px;
+                border-style: solid;
+                display: inline-block;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 0px;
+                width: 500px;
+                margin-top: 10px;
+            }
+            .c1011,.c1012,.c1013{
+                display: block;
+            }
+            .c10111{
+                display: inline-block;
+                margin-right: 3px;
+                vertical-align: top;
+            }
+            .c101111{
+                width: 200px;
+                object-fit: contain;
+                display: inline-block;
+            }
+            .vedeo-info{
+                display: inline-block;
+                width: 290px;
+            }
+            .vedeo-info1, .vedeo-info2, .vedeo-info3{
+                display: block;
+
+            }
+            .vedeo-info11{
+                font-weight: bold;
+                font-size: 15px;
+                margin-top: 0px;
+                margin-bottom: 30px;
+            }
+            .vedeo-info22, .vedeo-info33{
+                font-family: Roboto;
+                font-size: 16px;
+                color: rgb(96,96,96);
+            }
+            .vedeo-info33{
+                margin-top: 0px;
+            }
+            .vedeo-info22{
+                margin-bottom: 2px;
+                margin-top: 0px;
+            }
+            .d10{
+                width: 640px;
+                /*border-radius: 5px;*/
+                box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+                display: inline-block;
+                margin-top: 10px;
+                
+
+            }
+            .d101, .d102, .d103{
+                width: 200px;
+                height: 330px;
+                border-radius: 5px;
+                box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+                display: inline-block;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+                vertical-align: top;
+            }
+            .d1011{
+                width: 200px;
+                height: 200px;
+                display: inline-block;
+                margin-bottom: 2px;
+            }
+            .d10111{
+                width:200px;
+                height:200px;
+                object-fit: cover;
+                object-position: top;
+            }
+            .d1012{
+                width: 200px;
+                height: 30px;
+                display: block;
+                margin-bottom: 2px;
+            }
+            .d10122{
+                font-family: Roboto;
+                font-weight: bold;
+                font-size: 20px;
+                margin-top: 0px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+            }
+            .d1013{
+                width: 200px;
+                height: 30px;
+                display: block;
+                margin-bottom: 2px;
+                margin-top: 15px;
+            }
+            .d10132{
+                font-family: Roboto;
+                color: rgb(96,96,96);
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 5px;
+            }
+            /*.d1014{
+                width: 200px;
+                height: 30px;
+                border-radius: 5px;
+                box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+                display: block;
+                margin-bottom: 2px;
+                margin-top: 5px;
+            }*/
+            .d10142{
+                background-color: rgb(0, 157, 255);
+                color: white;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-radius: 3px;
+                margin-left: 5px;
+                margin-bottom: 2px;
+                margin-top: 5px;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="thumbnails/images.jpeg" class="xercise">
+        <img src="thumbnails/images.jpeg" class="xercise2">
+        <img src="thumbnails/images.jpeg" class="xercise3">
+        <input class="search-baar" type="text" placeholder="Search">
+        <input class="google-bar" type="text" placeholder="Search Google or type a URL">
+        <p>
+            Email
+        </p>
+        <input class="email-search" type="text">
+        <p class="p">
+            By clicking Agree & Join, you agree to the Privacy Policy.
+        </p>
+        <button class="agree-button">
+            Agree & Join
+        </button>
+        <img src="thumbnails/images.jpeg" class="sevenG">
+        <input class="baar" type="text" placeholder="What's happening?">
+        <button class="tweet-button">
+            Tweet
+        </button>
+        <input class="name-box" type="text" placeholder="Name">
+        <input class="email-box" type="text" placeholder="Email">
+        <p class="thanks">
+            Thanks for chatting with our customer support. would you like to take our quick survey?
+        </p>
+        <button class="yes">
+            yes
+        </button>
+        <button class="no">
+            no
+        </button>
+        <img src="thumbnails/unnamed.png" class="google-img">
+        <input class="google-bar2" type="text" placeholder="Search Google or type a URL">
+        <input class="first-name1" type="text" placeholder="First Name">
+        <input class="first-name2" type="text" placeholder="First Name">
+        <input class="email-box2" type="text" placeholder="Email">
+        <button class="sign-up">
+            Sign Up
+        </button>
+        <p class="uber">
+            Request a ride now
+        </p>
+        <input class="uber-pick" type="text" placeholder="Enter Pickup Location">
+        <input class="uber-drop" type="text" placeholder="Enter Destination">
+        <button class="request">
+            Request now
+        </button>
+        <button class="later">
+            Schedule for later
+        </button>
+        <div class="a9">
+        </div>
+        <div class="b9">
+        </div>
+        <div class="c9">
+            <p>
+                Satisfied with our service?
+            </p>
+            <button>
+                yes
+            </button>
+            <button>
+                No
+            </button>
+        </div>
+        <div class="d9">
+            <p class="d91">
+                Install YouTube Music
+            </p>
+            <p>
+                Add YouTube Music to your desktop for quick and easy access
+            </p>
+        </div>
+        <div class="e9">
+            <img src="thumbnails/images.jpeg" class="sevenG">
+            <input class="baar" type="text" placeholder="What's happening?">
+            <button class="tweet-button">
+                Tweet
+            </button>
+        </div>
+        <div class="f9">
+            <img src="thumbnails/images.jpeg" class="f92">
+            <p class="Oliver">
+                Oliver
+            </p>
+            <p class="Mutual">
+                2 Mutual friends
+            </p>
+            <button class="ADD">
+                Add Friend
+            </button>
+        </div>
+        <div class="g9">
+            <div class="f9">
+                <img src="thumbnails/images.jpeg" class="f92">
+                <p class="Oliver">
+                    Oliver
+                </p>
+                <p class="Mutual">
+                    2 Mutual friends
+                </p>
+                <button class="ADD">
+                    Add Friend
+                </button>
+            </div>
+            <div class="f9">
+                <img src="thumbnails/images.jpeg" class="f92">
+                <p class="Oliver">
+                    Oliver
+                </p>
+                <p class="Mutual">
+                    2 Mutual friends
+                </p>
+                <button class="ADD">
+                    Add Friend
+                </button>
+            </div>
+            <div class="f9">
+                <img src="thumbnails/images.jpeg" class="f92">
+                <p class="Oliver">
+                    Oliver
+                </p>
+                <p class="Mutual">
+                    2 Mutual friends
+                </p>
+                <button class="ADD">
+                    Add Friend
+                </button>
+            </div>
+        </div>
+        <div class="h9">
+            <img src="thumbnails/unnamed.png" class="google-image">
+        </div>
+        <div class="h9">
+            <input class="google-bar2" type="text" placeholder="Search Google or type a URL">
+        </div>
+        <div class="h9">
+            <button class="search-button">Google Search</button>
+            <button class="google-button">I'm Feeling Lucky</button>
+        </div>
+        <div class="A10">
+            <div class="a10">
+                <img src="thumbnails/images.jpeg" class="sevenGb">
+            </div>
+            <div class="cat-info">
+                <div class="cat-name">
+                    <p class="name-cat">
+                        Oliver
+                    </p>
+                </div>
+                <div class="cat-name">
+                    <p class="the-cat">
+                        the cat
+                    </p>
+                </div>
+                <div class="cat-name">
+                    <p class="pop">
+                        Popular
+                    </p>
+                </div>
+            </div>
+            <div class="fellow">
+                <button class="follow">
+                    Follow
+                </button>
+            </div>
+        </div>
+        <div class="B10">
+            <div class="bb10">
+                <div class="a10">
+                    <img src="thumbnails/images.jpeg" class="sevenGb">
+                </div>
+                <div class="cat-info">
+                    <div class="cat-name">
+                        <p class="name-cat">
+                            Oliver
+                        </p>
+                    </div>
+                    <div class="cat-name">
+                        <p class="the-cat">
+                            the cat
+                        </p>
+                    </div>
+                    <div class="cat-name">
+                        <p class="pop">
+                            Popular
+                        </p>
+                    </div>
+                </div>
+                <div class="fellow">
+                    <button class="follow">
+                        Follow
+                    </button>
+                </div>
+            </div>
+            <div class="bb10">
+                <div class="a10">
+                    <img src="thumbnails/images.jpeg" class="sevenGb">
+                </div>
+                <div class="cat-info">
+                    <div class="cat-name">
+                        <p class="name-cat">
+                            Oliver
+                        </p>
+                    </div>
+                    <div class="cat-name">
+                        <p class="the-cat">
+                            the cat
+                        </p>
+                    </div>
+                    <div class="cat-name">
+                        <p class="pop">
+                            Popular
+                        </p>
+                    </div>
+                </div>
+                <div class="fellow">
+                    <button class="follow">
+                        Follow
+                    </button>
+                </div>
+            </div>
+            <div class="a10">
+                <img src="thumbnails/images.jpeg" class="sevenGb">
+            </div>
+            <div class="cat-info">
+                <div class="cat-name">
+                    <p class="name-cat">
+                        Oliver
+                    </p>
+                </div>
+                <div class="cat-name">
+                    <p class="the-cat">
+                        the cat
+                    </p>
+                </div>
+                <div class="cat-name">
+                    <p class="pop">
+                        Popular
+                    </p>
+                </div>
+            </div>
+            <div class="fellow">
+                <button class="follow">
+                    Follow
+                </button>
+            </div>
+        </div>
+        <div class="c101">
+            <div class="c1011">
+                <div class="c10111">
+                    <img class="c101111"src="thumbnails/Screenshot 2025-02-22 165547.png">
+                </div>
+                <div class="vedeo-info">
+                    <div class="vedeo-info1">
+                        <p class="vedeo-info11">
+                            How to compete against CS degrees(as a self-taught dev)
+                        </p>
+                    </div>
+                    <div class="vedeo-info2">
+                        <p class="vedeo-info22">
+                            SuperSimpleDev
+                        </p>
+                    </div>
+                    <div class="vedeo-info3">
+                        <p class="vedeo-info33">
+                            1.5K views &#183; 4 months ago 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="c1012">
+                <div class="c1011">
+                    <div class="c10111">
+                        <img class="c101111"src="thumbnails/Screenshot 2025-02-22 165547.png">
+                    </div>
+                    <div class="vedeo-info">
+                        <div class="vedeo-info1">
+                            <p class="vedeo-info11">
+                                How to compete against CS degrees(as a self-taught dev)
+                            </p>
+                        </div>
+                        <div class="vedeo-info2">
+                            <p class="vedeo-info22">
+                                SuperSimpleDev
+                            </p>
+                        </div>
+                        <div class="vedeo-info3">
+                            <p class="vedeo-info33">
+                                1.5K views &#183; 4 months ago 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c1013">
+                <div class="c1011">
+                    <div class="c10111">
+                        <img class="c101111"src="thumbnails/Screenshot 2025-02-22 165547.png">
+                    </div>
+                    <div class="vedeo-info">
+                        <div class="vedeo-info1">
+                            <p class="vedeo-info11">
+                                How to compete against CS degrees(as a self-taught dev)
+                            </p>
+                        </div>
+                        <div class="vedeo-info2">
+                            <p class="vedeo-info22">
+                                SuperSimpleDev
+                            </p>
+                        </div>
+                        <div class="vedeo-info3">
+                            <p class="vedeo-info33">
+                                1.5K views &#183; 4 months ago 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d10">
+            <div class="d101">
+                <div class="d1011">
+                    <img class="d10111" src="thumbnails/images.jpeg">
+                </div>
+                <div class="d1012">
+                    <p class="d10122">
+                        Oliver
+                    <p>
+                </div>
+                <div class="d1013">
+                    <p class="d10132">
+                        2 Mutual Friends
+                    <p>
+                </div>
+                <div class="d1014">
+                    <button class="d10142">
+                        Add Friend
+                    </button>
+                </div>
+            </div>
+            <div class="d102">
+                <div class="d1011">
+                    <img class="d10111" src="thumbnails/images.jpeg">
+                </div>
+                <div class="d1012">
+                    <p class="d10122">
+                        Oliver
+                    <p>
+                </div>
+                <div class="d1013">
+                    <p class="d10132">
+                        2 Mutual Friends
+                    <p>
+                </div>
+                <div class="d1014">
+                    <button class="d10142">
+                        Add Friend
+                    </button>
+                </div>
+            </div>
+            <div class="d103">
+                <div class="d1011">
+                    <img class="d10111" src="thumbnails/images.jpeg">
+                </div>
+                <div class="d1012">
+                    <p class="d10122">
+                        Oliver
+                    <p>
+                </div>
+                <div class="d1013">
+                    <p class="d10132">
+                        2 Mutual Friends
+                    <p>
+                </div>
+                <div class="d1014">
+                    <button class="d10142">
+                        Add Friend
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
