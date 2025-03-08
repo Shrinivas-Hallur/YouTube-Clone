@@ -51,7 +51,7 @@
 }
 
 .channel1-picture{
-    width: 40px;
+    width: 36px;
     border-radius: 50px;
     margin-top: 8px;
 }
@@ -79,4 +79,19 @@
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: rgb(247, 247, 247);
+    margin-left: 0;
+    border-top-color:rgb(222,222,222);
+    border-top-width: 0.8px;
+    border-top-style: solid;
+}
+
+
+.video-link{
+    text-decoration: none;
+    color: black;
+}
+
+.channel-link{
+    text-decoration: none;
+    color: rgb(96,96,96)
 }

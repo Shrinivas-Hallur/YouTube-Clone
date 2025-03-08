@@ -1,3 +1,7 @@
+/* @media (min-width:1200px){
+
+} */
+
 .Sidebar{
     position: fixed;
     left: 0;
@@ -5,4 +9,29 @@
     top:56px;
     background-color: white;
     width: 72px;
+    z-index: 300;
+    padding-top: 4px;
 }
+
+.sidebar-link{
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 74px;
+}
+.sidebar-link:hover{
+    background-color: rgb(204, 204, 204);
+}
+
+.sidebar-link img{
+    height: 24px;
+    margin-bottom: 6.5px;
+}
+
+.sidebar-link div{
+    display: block;
+    font-size: 10px;
+    font-family: Roboto,Arial,'Times New Roman' ;
+} 
